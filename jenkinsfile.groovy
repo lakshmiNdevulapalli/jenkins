@@ -16,8 +16,7 @@ job('Migration-develop'){
         shell("npm install")
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
-      
-        nodejsCommand()
+     
     }
 }
 job('Migration-stage'){
@@ -40,7 +39,7 @@ job('Migration-stage'){
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
        
-        nodejsCommand()
+        
     }
 
 }
@@ -63,7 +62,6 @@ job('Migration-prod'){
         shell("npm install")
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
-      
-        nodejsCommand()
+    
     }
 }
