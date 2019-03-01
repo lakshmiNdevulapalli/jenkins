@@ -3,7 +3,6 @@ node{
             checkout scm
             echo "In develop stage"
             def nodejs = tool 'NodeJs'
-            sh 'node -v'
             sh 'npm install'
         }
         stage('stage'){
