@@ -1,5 +1,4 @@
 node{
-    stages{
         stage('develop'){
         	checkout scm
             echo "In develop stage"
@@ -16,7 +15,5 @@ node{
             sh 'node -v'
             sh 'npm install'
         }
-
-    }
-
 }
+
