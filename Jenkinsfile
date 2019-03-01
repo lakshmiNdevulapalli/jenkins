@@ -1,6 +1,6 @@
 pipeline{
     agents any
-    tools{NodeJs 'nodejs'}
+    tools{nodejs "nodejs"}
     stages{
         stage('develop'){
             checkout scm
