@@ -17,7 +17,7 @@ job('Migration-develop'){
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
         environmentalVariables{
-        	env("sample.env")
+        	env()
     	}
         nodejsCommand()
     }
@@ -42,7 +42,7 @@ job('Migration-stage'){
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
         environmentalVariables{
-        	env("sample.env")
+        	env()
     	}
         nodejsCommand()
     }
@@ -68,7 +68,7 @@ job('Migration-prod'){
         shell("npm install -g --save-dev @babel/cli")
         shell("npm start")
         environmentalVariables{
-        	env("sample.env")
+        	env()
     	}
         nodejsCommand()
     }
